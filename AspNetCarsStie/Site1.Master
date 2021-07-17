@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AspNetCarsStie.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <p>
+            <asp:Label ID="Label1" runat="server" Text="Welcome To Cars Síte"></asp:Label>
+        </p>
+        <asp:Menu ID="Menu1" runat="server">
+            <Items>
+                <asp:MenuItem NavigateUrl="Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem Text="Build A Car" Value="Build A Car"></asp:MenuItem>
+                <asp:MenuItem Text="View Inventory" Value="View Inventory"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </form>
+</body>
+</html>
